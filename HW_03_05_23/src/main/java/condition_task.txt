@@ -1,0 +1,23 @@
+ Классическая MyQueue - реализовать используя массив (Array)
+    pushToEnd(int data) - вставляет элемент в конец queue
+    remove() - удаляет элемент из начала queue
+    peek() - возвращает элемент из начала не удаляя его
+    isEmpty() - boolean
+    size() - int
+
+public class MyQueue
+    private int[] arr;      // массив для хранения элементов queue
+    private int head;      // head указывает на передний элемент в queue
+    private int tail;       // tail часть указывает на последний элемент в queue
+    private int capacity;   // максимальная емкость queue
+    private int count;      // текущий размер queue
+
+
+// Конструктор для инициализации queue
+
+public MyQueue(int size)
+    {
+        arr = new int[size];
+        capacity = size;
+        count = 0;
+    }
